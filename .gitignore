@@ -1,2 +1,3 @@
 .python-version
 /static/imdir/*.jpg
+ghostdriver.log

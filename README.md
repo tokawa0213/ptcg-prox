@@ -10,6 +10,14 @@
 
 4. Push convert to pdf
 
+### Some screenshots
+
+![](readme_resource/query.png)
+
+![](readme_resource/deck_result.png)
+
+![](readme_resource/pdf_result.png)
+
 ### TODO:
 
 1. Heroku free plan does not support this application (lack of storage)
