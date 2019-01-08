@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>出力するカードを選択して下さい</h2>
+    <form action="{{ url_for('PDFPage')}}" method="post">
+
+    <!-- CHANGE HERE FROM ... -->
+
+    <table>
+        {% for info in deck %}
+            <tr>
+                <td>
+                    <input type="checkbox" name="more_than_zero" checked>
+                </td>
+                <td><img src="static/{{ f_name }}/{{info[2]}}.jpg" width="10%" height="10%"></td>
+                <td>{{info[0]}}</td>
+                <td>{{info[3]}}</td>
+                <td>
+                    <select name="card_num">
+                        <option>{{info[3].rstrip("枚")|int}}枚</option>
+                        {% for i in range(info[3].rstrip("枚")|int)[::-1] %}
+                            <option>{{i}}枚</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <!-- HERE -->
+
+    <button type="submit">PDFを出力</button>
+    </form>
+{% endblock %}
