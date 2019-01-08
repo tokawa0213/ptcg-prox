@@ -1,5 +1,12 @@
 # ptcg-prox
 ## Web application for making proxy for ptcg
+
+### What can you do ?
+
+Make any deck with just 350 yen !!
+
+(color copy * number of PDF = 50 * 7 = 350)
+
 ### How to use
 
 1. Run data_collect.py and scraoe image data
