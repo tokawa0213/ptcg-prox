@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="" />
+    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,7 @@
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="Procfile" value="1" />
+          <entry key="README" value="1" />
           <entry key="buildpacks" value="2" />
           <entry key="csv" value="8" />
           <entry key="gitignore" value="6" />
@@ -73,6 +76,7 @@
           <entry key="HTML" value="23" />
           <entry key="Image" value="119" />
           <entry key="JavaScript" value="9" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="Python" value="20" />
           <entry key="Scratch" value="5" />
@@ -83,6 +87,7 @@
           <entry key="gitignore" value="52" />
           <entry key="hoge" value="21" />
           <entry key="html" value="1474" />
+          <entry key="md" value="501" />
           <entry key="py" value="7727" />
           <entry key="sql" value="60" />
           <entry key="txt" value="16" />
@@ -91,6 +96,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1474" />
+          <entry key="Markdown" value="501" />
           <entry key="PLAIN_TEXT" value="89" />
           <entry key="Python" value="7723" />
           <entry key="SQL" value="4" />
@@ -110,11 +116,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/imdir/hoge">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -225,6 +243,7 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/static/imdir/hoge" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -251,17 +270,6 @@
             <path>
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="imdir" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -429,6 +437,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13018598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -515,7 +524,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/imdir/34304.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/34551.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/34820.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35109.jpg" />
@@ -622,6 +630,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
