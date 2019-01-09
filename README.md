@@ -3,7 +3,7 @@
 
 ### Heroku Link
 
-Preparing
+https://ptcg-prox.herokuapp.com/
 
 ### What can you do ?
 
