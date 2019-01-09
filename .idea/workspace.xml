@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
           <entry key="hoge" value="21" />
           <entry key="html" value="1474" />
           <entry key="md" value="772" />
-          <entry key="py" value="7803" />
+          <entry key="py" value="7840" />
           <entry key="slugignore" value="24" />
           <entry key="sql" value="60" />
           <entry key="txt" value="20" />
@@ -97,7 +95,7 @@
           <entry key="HTML" value="1474" />
           <entry key="Markdown" value="772" />
           <entry key="PLAIN_TEXT" value="147" />
-          <entry key="Python" value="7799" />
+          <entry key="Python" value="7836" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
         </counts>
@@ -109,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -118,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="67" column="21" selection-start-line="65" selection-start-column="20" selection-end-line="67" selection-end-column="21" />
+            <state relative-caret-position="-459">
+              <caret line="17" column="91" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="91" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -139,7 +137,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.slugignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -148,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+            <state relative-caret-position="139">
+              <caret line="46" column="86" lean-forward="true" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
               <folding>
                 <element signature="e#0#113#0" expanded="true" />
               </folding>
@@ -224,8 +222,8 @@
         <option value="$PROJECT_DIR$/static/imdir/hoge" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.slugignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
@@ -427,6 +425,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1192" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16086957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -597,17 +596,27 @@
     <entry file="file://$PROJECT_DIR$/static/imdir/33001.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="46" column="86" lean-forward="true" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="67" column="21" selection-start-line="65" selection-start-column="20" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="-459">
+          <caret line="17" column="91" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="91" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -628,16 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
