@@ -5,7 +5,6 @@ import shutil
 from glob import glob
 import os
 
-
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
@@ -42,6 +41,7 @@ def ResultPage():
         if not os.path.exists(image_file):
             d.download_img(id)
     #Returning template during function
+
     return render_template('result.html',deck=d.deck,f_name="imdir")
 
 #TODO:Fix the routing => /result_pdf/id

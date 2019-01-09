@@ -1,12 +1,10 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from PIL import Image
-import os
-from glob import glob
 from reportlab.lib.units import mm
-import shutil
 from reportlab.pdfgen import canvas
 import requests
+from PIL import Image
+import os
 
 class Deck():
     def __init__(self,dcode):
