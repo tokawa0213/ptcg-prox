@@ -36,31 +36,14 @@ def ResultPage():
 
     d = prox.Deck(url)
     d.scrape()
-    #d.download_img()
-    new_name = url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/")
-    print(d.deck)
     card_id_list = [i[2] for i in d.deck]
     for id in card_id_list:
         image_file = "static/imdir/" + id + ".jpg"
         if not os.path.exists(image_file):
-            os.system(
-                "aria2c -x 16 -s 16  -o " + "static/imdir" + "/" + id + ".jpg" + " " + "https://www.pokemon-card.com/card-search/details.php/card/" + id
-            )
+            d.download_img(id)
+    #Returning template during function
     return render_template('result.html',deck=d.deck,f_name="imdir")
-    '''
-    gen = d.download_img()
-    def generate_output():
-        i = gen.__next__()
-        while True:
-            try:
-                yield render_template('result.html',deck=enumerate(d.deck),f_name=new_name,loaded_img=i)
-            except:
-                break
-            i = gen.__next__()
-    return Response(stream_with_context(generate_output()))
-    #return redirect('/result')
-    #return Response(stream_template('result.html',loaded_img=gen,deck=enumerate(d.deck),f_name=new_name))
-    '''
+
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST"])
 def PDFPage():

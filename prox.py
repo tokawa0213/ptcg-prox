@@ -6,10 +6,7 @@ from glob import glob
 from reportlab.lib.units import mm
 import shutil
 from reportlab.pdfgen import canvas
-import sqlite3
-'''
-'''
-
+import requests
 
 class Deck():
     def __init__(self,dcode):
@@ -45,42 +42,15 @@ class Deck():
         except:
             pass
 
-    def download_img(self):
-        #dbx = dropbox.Dropbox('AQcB0GJeexAAAAAAAAAEBwG0HarYkhk5cKfgx1yGGSqXuav7kDrot6D5X49uuIWH')
-        #dbx.users_get_current_account()
+    def download_img(self,id):
         print("Downloading image...")
-        try:
-            os.mkdir("static/"+self.dfolder_name)
-        except:
-            print("Error1")
-        if len(glob("static/" + self.dfolder_name +"/*.jpg")) == len(self.deck):
-            pass
-        else:
-            for card_info in self.deck[len(glob("static/" + self.dfolder_name + "/*.jpg")):]:
-                try:
-                    self.cursor.execute('SELECT img FROM data_set WHERE id =  \'%s\' ' % card_info[2])
-                    blob = self.cursor.fetchone()[0]
-                    with open("static/" + self.dfolder_name + "/" + card_info[2] + ".jpg", 'wb') as f:
-                        f.write(blob)
-                except:
-                    os.system(
-                        "aria2c -x 16 -s 16  -o " + "static/" + self.dfolder_name + "/" + card_info[2] + ".jpg"+ " " + self.image_base_link +card_info[2]
-                    )
-                    #shutil.copy("static/imdir/" + card_info[2] + ".jpg","static/" + self.dfolder_name + "/" + card_info[2] + ".jpg")
-            #change here
-
-            '''
-            for card_info in self.deck[len(glob("static/" + self.dfolder_name + "/*.jpg")):]:
-                dbx.files_download_to_file("static/"+self.dfolder_name+"/"+card_info[2]+".jpg", "/imdir/"+card_info[2]+".jpg")
-                
-            '''
-
-            '''
-            for card_info in self.deck[len(glob("static/" + self.dfolder_name +"/*.jpg")):]:
-                os.system(
-                    "aria2c -x 16 -s 16  -o static/" + self.dfolder_name + "/" + card_info[2] + ".jpg" + " " + self.image_base_link +
-                    card_info[2])
-            '''
+        base_page_link = self.image_base_link + id
+        r = requests.get(base_page_link)
+        soup = BeautifulSoup(r.text,"lxml")
+        image_link = "https://www.pokemon-card.com" + soup.find(class_="fit").get("src")
+        os.system(
+            "aria2c -x 16 -s 16  -o static/imdir/"+ id + ".jpg" + " " + image_link
+        )
 
 class PDF_generater():
     def __init__(self,url):
