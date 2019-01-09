@@ -44,7 +44,7 @@ def ResultPage():
         image_file = "static/imdir/" + id + ".jpg"
         if not os.path.exists(image_file):
             os.system(
-                "aria2c -x 16 -s 16  -o " + "static/img" + "/" + id + ".jpg" + " " + "https://www.pokemon-card.com/card-search/details.php/card/" + id
+                "aria2c -x 16 -s 16  -o " + "static/imdir" + "/" + id + ".jpg" + " " + "https://www.pokemon-card.com/card-search/details.php/card/" + id
             )
     return render_template('result.html',deck=d.deck,f_name="imdir")
     '''
