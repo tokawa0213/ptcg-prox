@@ -1,6 +1,10 @@
 # ptcg-prox
 ## Web application for making proxy for ptcg
 
+### Heroku Link
+
+Preparing
+
 ### What can you do ?
 
 Make any deck with just 350 yen !!
@@ -18,16 +22,19 @@ Make any deck with just 350 yen !!
 4. Push convert to pdf
 
 ### Some screenshots
-
+1.
+* Deck code query
 ![](readme_resource/query.png)
 
+* Selecting cards
 ![](readme_resource/deck_result.png)
 
+* PDF output
 ![](readme_resource/pdf_result.png)
 
 ### TODO:
 
 1. Heroku free plan does not support this application (lack of storage)
-2. Use boot strap to make the UI better
+2. Use bootstrap to make the UI better
 3. Change the routing system
-4. Refacter the code
+4. Refactor the code
