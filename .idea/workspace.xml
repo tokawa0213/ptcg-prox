@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.slugignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +64,7 @@
           <entry key="md" value="1" />
           <entry key="png" value="4" />
           <entry key="py" value="20" />
+          <entry key="slugignore" value="1" />
           <entry key="sql" value="5" />
           <entry key="txt" value="10" />
         </counts>
@@ -77,7 +76,7 @@
           <entry key="Image" value="123" />
           <entry key="JavaScript" value="9" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="PLAIN_TEXT" value="23" />
           <entry key="Python" value="20" />
           <entry key="Scratch" value="5" />
         </counts>
@@ -87,8 +86,9 @@
           <entry key="gitignore" value="76" />
           <entry key="hoge" value="21" />
           <entry key="html" value="1474" />
-          <entry key="md" value="744" />
+          <entry key="md" value="772" />
           <entry key="py" value="7727" />
+          <entry key="slugignore" value="17" />
           <entry key="sql" value="60" />
           <entry key="txt" value="16" />
         </counts>
@@ -96,8 +96,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1474" />
-          <entry key="Markdown" value="744" />
-          <entry key="PLAIN_TEXT" value="113" />
+          <entry key="Markdown" value="772" />
+          <entry key="PLAIN_TEXT" value="130" />
           <entry key="Python" value="7723" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
@@ -116,14 +116,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="450">
-                <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <first_editor relative-caret-position="314">
+                <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.slugignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -184,6 +193,7 @@
         <option value="$PROJECT_DIR$/static/imdir/hoge" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.slugignore" />
       </list>
     </option>
   </component>
@@ -211,11 +221,6 @@
             <path>
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-              <item name="readme_resource" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,7 +389,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1192" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15826087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -400,7 +404,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43829787" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43829787" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
@@ -471,7 +475,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/imdir/35762.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35752.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35772.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35761.jpg" />
@@ -589,10 +592,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="450">
-            <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <first_editor relative-caret-position="314">
+            <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.slugignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
