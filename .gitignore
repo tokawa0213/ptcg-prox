@@ -1,7 +1,7 @@
 .python-version
-static/imdir/*.jpg
-static/imdir/*.pdf
+/static/imdir/*.jpg
+/static/imdir/*.pdf
 ghostdriver.log
-venv
-.idea
-__pycache__
+/venv
+/.idea
+/__pycache__
