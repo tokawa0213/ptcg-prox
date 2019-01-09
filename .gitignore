@@ -2,3 +2,6 @@
 /static/imdir/*.jpg
 /static/imdir/*.pdf
 ghostdriver.log
+/venv
+/.idea
+/__pycache__
