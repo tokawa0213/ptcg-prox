@@ -36,10 +36,7 @@ def ResultPage():
     global url
     global card_id_list
 
-    try:
-        url = request.form['name']
-    except:
-        pass
+    url = request.form['name']
     print(url)
     d = prox.Deck(url)
     d.scrape()
@@ -58,13 +55,9 @@ def PDFPage():
     global url
     global card_id_list
 
-    try:
-        f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
-        p = prox.PDF_generater(url)
-        p.make_pdf(f_info)
-    except:
-        pass
-    print(f_info)
+    f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
+    p = prox.PDF_generater(url)
+    p.make_pdf(f_info)
     binary_pdf = open("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
