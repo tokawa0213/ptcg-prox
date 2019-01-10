@@ -58,10 +58,12 @@ def PDFPage():
     global url
     global card_id_list
 
-    if not os.path.exists("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf"):
+    try:
         f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
         p = prox.PDF_generater(url)
         p.make_pdf(f_info)
+    except:
+        pass
     binary_pdf = open("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'

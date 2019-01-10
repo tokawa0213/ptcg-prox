@@ -178,7 +178,6 @@ if __name__ == "__main__":
     except:
         m = 33000
         #sun moon regu
-    m = 33000
     for i in range(m+1,40000):
         print(i)
         d = search(i)
