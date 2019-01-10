@@ -1,10 +1,8 @@
 from flask import Flask,render_template,request,make_response,Response,stream_with_context,render_template_string
 import prox
 from flask_bootstrap import Bootstrap
-import shutil
 from glob import glob
 import os
-import re
 
 #TODO: static/imdir => exclude non gx poke
 

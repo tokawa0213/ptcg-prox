@@ -5,12 +5,6 @@ import pandas as pd
 from PIL import Image
 from io import BytesIO
 from glob import glob
-import dropbox
-
-dbx = dropbox.Dropbox('AQcB0GJeexAAAAAAAAAEBwG0HarYkhk5cKfgx1yGGSqXuav7kDrot6D5X49uuIWH')
-
-dbx.users_get_current_account()
-dbx.files_download_to_file("static/36116.jpg","/imdir/36116.jpg" )
 
 def name_search(name):
     uri = "https://www.pokemon-card.com/card-search/index.php?keyword="+ name +"&regulation_header_search_item0=XY&sm_and_keyword=true"
@@ -67,12 +61,6 @@ def search(i):
         r = requests.get("https://www.pokemon-card.com" +soup.find(class_ = "fit").get("src"))
     except:
         return
-    try:
-        img = Image.open(BytesIO(r.content))
-        img.save("./static/imdir/" + num + ".jpg")
-        d["Img"] = "./static/imdir/" + num + ".jpg"
-    except:
-        d["Img"] = "TODO : Insert GIF"
     # ability_list
     ability = [i.text for i in soup.findAll("h2")]
     try:
@@ -172,12 +160,21 @@ def search(i):
         d["Ret"] = len(weak_res_ret[2].findAll("span"))
     except:
         ret = "None"
+    if d["HP"] == None or d["Name"].endswith("GX"):
+        try:
+            img = Image.open(BytesIO(r.content))
+            img.save("./static/imdir/" + num + ".jpg")
+            d["Img"] = "./static/imdir/" + num + ".jpg"
+        except:
+            d["Img"] = "TODO : Insert GIF"
     return d
 
 #TODO: CHECK THE CARD ID ! THIS RANGE IS VERY TEKITO=
 if __name__ == "__main__":
+    #33553 : start of Best of XY
+    #33851 : End of Nest of XY
     try:
-        m = 33000 + len(dbx.files_list_folder('/imdir').entries)
+        m = 33000 + len(glob("static/imdir/*"))-1
     except:
         m = 33000
         #sun moon regu
