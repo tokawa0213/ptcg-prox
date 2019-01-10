@@ -40,7 +40,7 @@ def ResultPage():
         url = request.form['name']
     except:
         pass
-
+    print(url)
     d = prox.Deck(url)
     d.scrape()
     card_id_list = [i[2] for i in d.deck]
@@ -64,6 +64,7 @@ def PDFPage():
         p.make_pdf(f_info)
     except:
         pass
+    print(f_info)
     binary_pdf = open("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
