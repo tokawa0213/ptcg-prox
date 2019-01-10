@@ -4,7 +4,9 @@ from flask_bootstrap import Bootstrap
 import shutil
 from glob import glob
 import os
-from time import sleep
+import re
+
+#TODO: static/imdir => exclude non gx poke
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -36,17 +38,19 @@ def ResultPage():
     global url
     global card_id_list
 
-    if url == "":
+    try:
         url = request.form['name']
+    except:
+        pass
+
     d = prox.Deck(url)
     d.scrape()
     card_id_list = [i[2] for i in d.deck]
+
     for id in card_id_list:
         image_file = "static/imdir/" + id + ".jpg"
         if not os.path.exists(image_file):
             d.download_img(id)
-    #Returning template during function
-
     return render_template('result.html',deck=d.deck,f_name="imdir")
 
 #TODO:Fix the routing => /result_pdf/id

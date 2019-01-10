@@ -5,7 +5,7 @@ from reportlab.pdfgen import canvas
 import requests
 from PIL import Image
 import os
-
+import re
 class Deck():
     def __init__(self,dcode):
         self.dcode = dcode
@@ -29,7 +29,7 @@ class Deck():
                 if num != None:
                     tup.append(num.text)
                 try:
-                    tup.append(img["alt"])
+                    tup.append(re.sub("&amp;","&",img["alt"]))
                     tup.append(img["src"])
                     tup.append(img["id"].lstrip("img_"))
                 except:

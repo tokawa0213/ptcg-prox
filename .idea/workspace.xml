@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ptcg_prox$ptcg_prox.coverage" NAME="ptcg_prox Coverage Results" MODIFIED="1547096134335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ptcg_prox$ptcg_prox.coverage" NAME="ptcg_prox Coverage Results" MODIFIED="1547098437661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ptcg_prox$prox.coverage" NAME="prox Coverage Results" MODIFIED="1544529514508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ptcg_prox$data_collect.coverage" NAME="data_collect Coverage Results" MODIFIED="1545292373228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ptcg_prox$convert2db.coverage" NAME="convert2db Coverage Results" MODIFIED="1546857257002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -59,7 +59,7 @@
           <entry key="gitignore" value="6" />
           <entry key="hoge" value="1" />
           <entry key="html" value="25" />
-          <entry key="jpg" value="135" />
+          <entry key="jpg" value="136" />
           <entry key="js" value="9" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
@@ -74,7 +74,7 @@
         <counts>
           <entry key="CSV" value="8" />
           <entry key="HTML" value="25" />
-          <entry key="Image" value="139" />
+          <entry key="Image" value="140" />
           <entry key="JavaScript" value="9" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="26" />
@@ -89,7 +89,7 @@
           <entry key="hoge" value="21" />
           <entry key="html" value="1474" />
           <entry key="md" value="772" />
-          <entry key="py" value="8536" />
+          <entry key="py" value="8872" />
           <entry key="slugignore" value="24" />
           <entry key="sql" value="60" />
           <entry key="txt" value="20" />
@@ -100,7 +100,7 @@
           <entry key="HTML" value="1474" />
           <entry key="Markdown" value="772" />
           <entry key="PLAIN_TEXT" value="151" />
-          <entry key="Python" value="8532" />
+          <entry key="Python" value="8868" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
         </counts>
@@ -121,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_collect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="376">
               <caret line="71" column="11" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="11" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -130,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+            <state relative-caret-position="282">
+              <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -155,19 +155,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.slugignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="273">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="e#0#113#0" expanded="true" />
               </folding>
@@ -177,7 +168,9 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/result.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -221,8 +214,8 @@
       <find>soup</find>
       <find>Beautiful</find>
       <find>mkdir</find>
-      <find>img</find>
       <find>deck</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -255,8 +248,8 @@
         <option value="$PROJECT_DIR$/.slugignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.buildpacks" />
-        <option value="$PROJECT_DIR$/prox.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/prox.py" />
       </list>
     </option>
   </component>
@@ -289,6 +282,12 @@
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="imdir" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
@@ -462,14 +461,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1192" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16086957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16086957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24113475" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -549,7 +547,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/imdir/35880.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35881.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35899.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imdir/35890.jpg" />
@@ -652,13 +649,38 @@
     <entry file="file://$PROJECT_DIR$/static/imdir/33493.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/imdir/34000.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.slugignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/imdir/35974.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -672,16 +694,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.slugignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_collect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="376">
           <caret line="71" column="11" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="11" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -691,23 +706,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="282">
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/imdir/34000.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
