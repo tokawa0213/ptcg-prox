@@ -4,35 +4,40 @@ from flask_bootstrap import Bootstrap
 import shutil
 from glob import glob
 import os
+from time import sleep
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
 #TODO:Use bootstrap
-#TODO:Build a DB and don't download everytime?
-#TODO: import os os.path.gettime
+
 url = ""
 card_id_list = []
 
 @app.route('/')
 def index():
+
+    global url
+    global card_id_list
+
+    url = ""
+    card_id_list = []
+
+    for pdf_file in glob("static/*.pdf"):
+        os.remove(pdf_file)
+
     return render_template('index.html')
-#TODO: Fix time out error
+
 #TODO:Fix the routing => /result/deck_id
 
-@app.route('/result',methods=["POST"])
+@app.route('/result',methods=["POST","GET"])
 def ResultPage():
 
     global url
     global card_id_list
 
-    url = request.form['name']
-
-    inside_data_folder = glob("static/*")
-    if len(inside_data_folder) >= 10:
-        time_folder = [os.path.getctime(folder) for folder in inside_data_folder]
-        shutil.rmtree(glob(inside_data_folder[time_folder.index(sorted(time_folder,reverse=True)[1])]))
-
+    if url == "":
+        url = request.form['name']
     d = prox.Deck(url)
     d.scrape()
     card_id_list = [i[2] for i in d.deck]
@@ -45,15 +50,16 @@ def ResultPage():
     return render_template('result.html',deck=d.deck,f_name="imdir")
 
 #TODO:Fix the routing => /result_pdf/id
-@app.route('/result_pdf',methods=["POST"])
+@app.route('/result_pdf',methods=["POST","GET"])
 def PDFPage():
 
     global url
     global card_id_list
 
-    f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
-    p = prox.PDF_generater(url)
-    p.make_pdf(f_info)
+    if not os.path.exists("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf"):
+        f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
+        p = prox.PDF_generater(url)
+        p.make_pdf(f_info)
     binary_pdf = open("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
