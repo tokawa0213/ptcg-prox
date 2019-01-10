@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.slugignore" beforeDir="false" afterPath="$PROJECT_DIR$/.slugignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/imdir/35204.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/imdir/35254.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/imdir/35433.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/imdir/35688.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/imdir/36066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/imdir/36067.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,21 +91,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="buildpacks" value="4" />
-          <entry key="gitignore" value="82" />
+          <entry key="gitignore" value="84" />
           <entry key="hoge" value="21" />
-          <entry key="html" value="1551" />
+          <entry key="html" value="1563" />
           <entry key="md" value="772" />
           <entry key="py" value="9161" />
-          <entry key="slugignore" value="24" />
+          <entry key="slugignore" value="25" />
           <entry key="sql" value="60" />
           <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1551" />
+          <entry key="HTML" value="1563" />
           <entry key="Markdown" value="772" />
-          <entry key="PLAIN_TEXT" value="151" />
+          <entry key="PLAIN_TEXT" value="154" />
           <entry key="Python" value="9157" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
@@ -108,11 +115,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="45">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -133,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/.slugignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -159,18 +166,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/result.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -233,21 +244,21 @@
         <option value="$PROJECT_DIR$/templates/result2.html" />
         <option value="$PROJECT_DIR$/templates/c_table.html" />
         <option value="$PROJECT_DIR$/out.csv" />
-        <option value="$PROJECT_DIR$/templates/result.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1105186c-52d1-441a-9997-ddbda0312d6c/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff2fa4e6-c845-4814-85a7-ff55f5e900da/console.sql" />
         <option value="$PROJECT_DIR$/convert2db.py" />
         <option value="$PROJECT_DIR$/static/imdir/hoge" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.slugignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.buildpacks" />
         <option value="$PROJECT_DIR$/prox.py" />
         <option value="$PROJECT_DIR$/data_collect.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/templates/result.html" />
+        <option value="$PROJECT_DIR$/.slugignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -276,16 +287,6 @@
             <path>
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,14 +454,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1192" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16347826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24113475" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,7 +469,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008696" side_tool="true" weight="0.43829787" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" weight="0.43829787" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" visible="true" weight="0.43829787" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
@@ -691,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.slugignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_collect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -707,16 +700,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/prox.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -737,8 +720,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.slugignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>

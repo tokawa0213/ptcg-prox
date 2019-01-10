@@ -1,3 +1,4 @@
 .python-version
-/static/imdir/*.pdf
+/static/*.pdf
 ghostdriver.log
+/venv

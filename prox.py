@@ -19,6 +19,7 @@ class Deck():
             driver = webdriver.PhantomJS()
             driver.get(self.uri)
             r = driver.page_source
+            driver.close()
             soup = BeautifulSoup(r,"lxml")
             soup = soup.find(id="cardImagesView")
             c_list = soup.findAll(class_="cPos")
