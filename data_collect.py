@@ -31,12 +31,12 @@ def search(i):
         "Move2":[],
         "Move3":[],
         "Evo":False,
-        "What":False,
-        "HP":False,
-        "Type":False,
-        "Weak":False,
-        "Res":False,
-        "Ret":False,
+        "What":None,
+        "HP":0,
+        "Type":None,
+        "Weak":None,
+        "Res":None,
+        "Ret":0,
         "Link":None
     }
 
@@ -87,7 +87,7 @@ def search(i):
         elif i == "特殊エネルギー":
             d["SpEn"] = ability_exp.pop(0).text
         elif i == "基本エネルギー":
-            return
+            pass
         elif i == "サポート":
             d["Support"] = ability_exp.pop(0).text
         elif i == "スタジアム":
@@ -147,7 +147,7 @@ def search(i):
         #pandas
         #data = pd.DataFrame([d.values()],columns=d.keys())
         #data.to_csv('out.csv',encoding="utf-8", mode='a')
-        return d
+        pass
     try:
         d["Weak"] = weak_res_ret[0].span.get("class")[0].lstrip("icon-")
     except:
@@ -160,7 +160,7 @@ def search(i):
         d["Ret"] = len(weak_res_ret[2].findAll("span"))
     except:
         ret = "None"
-    if d["HP"] == None or d["Name"].endswith("GX"):
+    if d["HP"] == 0 or d["Name"].endswith("GX"):
         try:
             img = Image.open(BytesIO(r.content))
             img.save("./static/imdir/" + num + ".jpg")
@@ -178,6 +178,7 @@ if __name__ == "__main__":
     except:
         m = 33000
         #sun moon regu
+    m = 33000
     for i in range(m+1,40000):
         print(i)
         d = search(i)
