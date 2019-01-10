@@ -47,7 +47,7 @@ class Deck():
         soup = BeautifulSoup(r.text,"lxml")
         image_link = "https://www.pokemon-card.com" + soup.find(class_="fit").get("src")
         os.system(
-            "aria2c -x 16 -s 16  -o static/imdir/"+ id + ".jpg" + " " + image_link
+            "aria2c -x 8 -s 8  -o static/imdir/"+ id + ".jpg" + " " + image_link
         )
 
 class PDF_generater():
