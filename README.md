@@ -34,7 +34,6 @@ Make any deck with just 350 yen !!
 
 ### TODO:
 
-1. Heroku free plan does not support this application (lack of storage)
-2. Use bootstrap to make the UI better
-3. Change the routing system
-4. Refactor the code
+1. Use bootstrap to make the UI better
+2. Change the routing system
+3. Refactor the code
