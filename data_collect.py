@@ -174,8 +174,11 @@ if __name__ == "__main__":
     #33553 : start of Best of XY
     #33851 : End of Nest of XY
     try:
-        m = 33000 + len(glob("static/imdir/*"))-1
+        m = int(sorted(glob("static/imdir/*.jpg"))[-1].lstrip("static/imdir/").rstrip(".jpg"))
+        print(m)
     except:
+        import traceback
+        traceback.print_exc()
         m = 33000
         #sun moon regu
     for i in range(m+1,40000):
