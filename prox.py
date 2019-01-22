@@ -6,6 +6,7 @@ import requests
 from PIL import Image
 import os
 import re
+
 class Deck():
     def __init__(self,dcode):
         self.dcode = dcode
@@ -13,6 +14,7 @@ class Deck():
         self.image_base_link = "https://www.pokemon-card.com/card-search/details.php/card/"
         self.uri = dcode
         self.deck = []
+
     def scrape(self):
         print("Scraping...")
         try:
@@ -20,6 +22,7 @@ class Deck():
             driver.get(self.uri)
             r = driver.page_source
             driver.close()
+            driver.quit()
             soup = BeautifulSoup(r,"lxml")
             soup = soup.find(id="cardImagesView")
             c_list = soup.findAll(class_="cPos")

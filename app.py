@@ -3,6 +3,7 @@ import prox
 from flask_bootstrap import Bootstrap
 from glob import glob
 import os
+import random
 
 #TODO: static/imdir => exclude non gx poke
 
@@ -12,16 +13,16 @@ bootstrap = Bootstrap(app)
 #TODO:Use bootstrap
 
 url = ""
-card_id_list = []
+deck = None
 
 @app.route('/')
 def index():
 
     global url
-    global card_id_list
+    global deck
 
     url = ""
-    card_id_list = []
+    deck = None
 
     for pdf_file in glob("static/*.pdf"):
         os.remove(pdf_file)
@@ -34,26 +35,29 @@ def index():
 def ResultPage():
 
     global url
-    global card_id_list
+    global deck
 
     url = request.form['name']
     print(url)
     d = prox.Deck(url)
     d.scrape()
-    card_id_list = [i[2] for i in d.deck]
+    deck = d.deck
+    card_id_list = [i[2] for i in deck]
 
     for id in card_id_list:
         image_file = "static/imdir/" + id + ".jpg"
         if not os.path.exists(image_file):
             d.download_img(id)
-    return render_template('result.html',deck=d.deck,f_name="imdir")
+    return render_template('result.html',deck=deck,f_name="imdir")
 
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])
 def PDFPage():
 
     global url
-    global card_id_list
+    global deck
+
+    card_id_list = [i[2] for i in deck]
 
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
     p = prox.PDF_generater(url)
@@ -64,6 +68,19 @@ def PDFPage():
     response.headers['Content-Disposition'] = \
         'inline; filename=%s.pdf' % 'yourfilename'
     return response
+
+@app.route('/play_ground',methods=["POST","GET"])
+def play_ground():
+    global deck
+    new_deck = []
+    for _, _, idx, number in deck:
+        for _ in range(int(number.rstrip("枚"))):
+            new_deck.append(idx)
+    random.shuffle(new_deck)
+    hand = new_deck[:7]
+    side = new_deck[7:13]
+    rest_deck = new_deck[13:]
+    return render_template("play_ground.html",hand=hand,side=side,deck=rest_deck)
 
 if __name__ == '__main__':
     app.run()

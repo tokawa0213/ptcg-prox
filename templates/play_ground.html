@@ -1,0 +1,123 @@
+<meta name="viewport" content="width=device-width">
+<!DOCTYPE html>
+<html lang="jp">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Proxy maker{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="static/css/play_ground.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+
+        var hand = {{hand|tojson}}
+        var deck = {{deck|tojson}}
+        var side = {{side|tojson}}
+        var card_position,drag_object,card_num=0;
+
+        window.onload = function(){
+            card_position = [];
+
+            for (;card_num < hand.length;card_num++){
+                $(".hand").append("<li><img src=static/imdir/"+hand[card_num]+".jpg class=\"card\" id="+card_num.toString()+"></li>")
+                card_position[card_num] = $('#'+card_num).position();
+            }
+
+            $('.card').draggable({
+                //この下２行の記述で、ドラッグしているものが前面に表示される
+                stack:'.card',
+                zIndex:10,
+                start:function(){
+                    //今ドラッグしているオブジェクトを格納しておく
+                    drag_object = $(this);
+                    card_position[Number(drag_object.attr("id"))] = drag_object.position();
+                },
+                revert: function(event, ui){
+                    var num = Number($(this).attr('id'));
+                    //ドロップターゲットに吸着しない場合は初期位置に戻す
+                    $(this).data('ui-draggable').originalPosition = {
+                        top: card_position[num].top,
+                        left: card_position[num].left,
+                    };
+                    return !event;
+                }
+            });
+
+            $('.drop').droppable({
+                drop: function( event, ui ) {
+                    if($(this).attr("id") !== "hand_area"){
+                        //ドロップされたら吸着する
+                        var dropposi = $(this).position();
+                        card_position[Number(drag_object.attr("id"))] = drag_object.position();
+                        drag_object.css('top',(dropposi.top)+'px');
+                        drag_object.css('left',(dropposi.left)+'px');
+
+                    }else{
+                        //
+                    }
+                }
+            });
+        $(window).resize(function(){
+            //divide the position
+        })
+    };
+    </script>
+    </head>
+
+    <body>
+        <div class="main">
+            <img src = "static/p_mat.jpg" id = "back">
+            <div class  = "drop" id = "battle-field"></div>
+            <div class  = "drop" id = "bench-1"></div>
+            <div class  = "drop" id = "bench-2"></div>
+            <div class  = "drop" id = "bench-3"></div>
+            <div class  = "drop" id = "bench-4"></div>
+            <div class  = "drop" id = "bench-5"></div>
+            <div class  = "drop" id = "side-1"></div>
+            <div class  = "drop" id = "side-2"></div>
+            <div class  = "drop" id = "side-3"></div>
+            <div class  = "drop" id = "side-4"></div>
+            <div class  = "drop" id = "side-5"></div>
+            <div class  = "drop" id = "side-6"></div>
+            <div class  = "drop" id = "deck"></div>
+            <div class  = "drop" id = "trash"></div>
+            <div class="operations">
+                <form action="{{ url_for('play_ground')}}" method="post"><button type="submit"> 最初からやり直す </button></form>
+                <input type="button" value="一枚引く" class="draw">
+                <input type="button" value="シャッフル" class="shuffle">
+            </div>
+            <div class  = "drop" id = "hand_area"></div>
+            <h4> Hand </h4>
+            <ul class= "hand">
+            </ul>
+        </div>
+
+    <script>
+
+        $(".draw").click(function () {
+            if(deck.length === 0){
+                alert("No more card in deck")
+            }else{
+                var top_card = deck.pop();
+                card_num++
+                $(".hand").append("<li><img src=static/imdir/" + top_card + ".jpg class=\"card\" id=" + card_num + "></li>")
+            }
+        });
+
+        $(".shuffle").click(function (){
+            for(var i = deck.length - 1; i > 0; i--){
+                var r = Math.floor(Math.random() * (i + 1));
+                var tmp = deck[i];
+                deck[i] = deck[r];
+                deck[r] = tmp;
+            }
+            alert("デッキがシャッフルされました")
+        });
+
+        //ドロップが成功したらhandからその要素をpopする。positionを変更する。
+        //ドロップが失敗したならhandに変化なし。以前のpositionに戻る。
+        //
+        //
+    </script>
+    </body>
+</html>

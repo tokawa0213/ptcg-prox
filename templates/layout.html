@@ -1,13 +1,18 @@
 <meta name="viewport" content="width=device-width">
-{% extends "bootstrap/base.html" %}
-{% block title %}Proxy maker{% endblock %}
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Proxy maker{% endblock %}</title>
+    </head>
+    <body>
+        {% block navbar %}
+        <div class="navbar navbar-fixed-top">
+          <!-- ... -->
+        </div>
+        {% endblock %}
 
-{% block navbar %}
-<div class="navbar navbar-fixed-top">
-  <!-- ... -->
-</div>
-{% endblock %}
-
-{% block content %}
-{% endblock %}
-
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

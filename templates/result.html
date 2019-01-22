@@ -29,6 +29,10 @@
     <!-- HERE -->
 
     <button type="submit">PDFを出力</button>
-        <h5>Image cited from <a>https://www.pokemon-card.com/</a></h5>
     </form>
+    <form action="{{ url_for('play_ground')}}" method="post">
+        <button type="submit"> デッキを試してみる </button>
+    </form>
+    <h5>Image cited from <a>https://www.pokemon-card.com/</a></h5>
+
 {% endblock %}
