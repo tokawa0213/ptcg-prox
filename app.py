@@ -5,8 +5,6 @@ from glob import glob
 import os
 import random
 
-#TODO: static/imdir => exclude non gx poke
-
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
@@ -29,15 +27,13 @@ def index():
 
     return render_template('index.html')
 
-#TODO:Fix the routing => /result/deck_id
-
-@app.route('/result',methods=["POST","GET"])
+@app.route('/result',methods=["GET"])
 def ResultPage():
 
     global url
     global deck
 
-    url = request.form['name']
+    url = request.args.get('name')
     print(url)
     d = prox.Deck(url)
     d.scrape()

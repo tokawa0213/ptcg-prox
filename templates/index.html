@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <h2> デッキコードURLを入力 </h2>
-    <form action="{{ url_for('ResultPage')}}" method="post">
+    <form action="{{ url_for('ResultPage')}}" method="get">
     <input type ="text" name="name" placeholder="URL"/>
         <button type="submit">Submit</button>
     </form>
