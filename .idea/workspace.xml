@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/body.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/head.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/play_ground.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/play_ground.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/play_ground.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/play_ground.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
-    </list>
+    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ptcg_prox$ptcg_prox.coverage" NAME="ptcg_prox Coverage Results" MODIFIED="1549009818954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ptcg_prox$ptcg_prox.coverage" NAME="ptcg_prox Coverage Results" MODIFIED="1549010173901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ptcg_prox$prox.coverage" NAME="prox Coverage Results" MODIFIED="1544529514508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ptcg_prox$data_collect.coverage" NAME="data_collect Coverage Results" MODIFIED="1547200242813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ptcg_prox$convert2db.coverage" NAME="convert2db Coverage Results" MODIFIED="1546857257002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -67,13 +58,13 @@
           <entry key="buildpacks" value="3" />
           <entry key="css" value="2" />
           <entry key="csv" value="8" />
-          <entry key="gitignore" value="7" />
+          <entry key="gitignore" value="8" />
           <entry key="hoge" value="1" />
           <entry key="html" value="39" />
           <entry key="jpg" value="196" />
           <entry key="js" value="14" />
           <entry key="log" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="png" value="7" />
           <entry key="py" value="26" />
           <entry key="slugignore" value="2" />
@@ -88,8 +79,8 @@
           <entry key="HTML" value="39" />
           <entry key="Image" value="203" />
           <entry key="JavaScript" value="14" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="30" />
           <entry key="Python" value="26" />
           <entry key="Scratch" value="5" />
         </counts>
@@ -98,10 +89,10 @@
         <counts>
           <entry key="buildpacks" value="4" />
           <entry key="css" value="983" />
-          <entry key="gitignore" value="84" />
+          <entry key="gitignore" value="98" />
           <entry key="hoge" value="21" />
           <entry key="html" value="10870" />
-          <entry key="js" value="30" />
+          <entry key="js" value="31" />
           <entry key="md" value="772" />
           <entry key="py" value="9819" />
           <entry key="slugignore" value="25" />
@@ -113,9 +104,9 @@
         <counts>
           <entry key="CSS" value="983" />
           <entry key="HTML" value="10870" />
-          <entry key="JavaScript" value="30" />
+          <entry key="JavaScript" value="31" />
           <entry key="Markdown" value="772" />
-          <entry key="PLAIN_TEXT" value="154" />
+          <entry key="PLAIN_TEXT" value="168" />
           <entry key="Python" value="9815" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
@@ -134,29 +125,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/play_ground.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="-21">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/body.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/head.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -204,8 +187,8 @@
       <find>append</find>
       <find>deck</find>
       <find>deck_trash_lost</find>
-      <find>card_num</find>
       <find>card_position</find>
+      <find>card_num</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -233,7 +216,6 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.buildpacks" />
         <option value="$PROJECT_DIR$/.slugignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/data_collect.py" />
         <option value="$PROJECT_DIR$/prox.py" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
@@ -245,6 +227,7 @@
         <option value="$PROJECT_DIR$/static/js/main.js" />
         <option value="$PROJECT_DIR$/templates/play_ground.html" />
         <option value="$PROJECT_DIR$/static/js/head.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -277,12 +260,6 @@
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -452,14 +429,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="23" width="1192" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18695652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24113475" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -468,7 +444,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008696" side_tool="true" weight="0.43829787" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" weight="0.3177305" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" visible="true" weight="0.3177305" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
@@ -539,9 +515,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/imdir/35173.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/imdir/35666.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -649,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.slugignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -719,6 +685,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/play_ground.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1872">
@@ -726,24 +699,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/head.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/body.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="465">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/play_ground.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/head.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        <state relative-caret-position="-21">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
         </state>
       </provider>
     </entry>
