@@ -5,9 +5,8 @@ from glob import glob
 import os
 import random
 
-
 app = Flask(__name__)
-app.secret_key = 'hogehoge'
+app.secret_key = str(random.randint(0,9999999))
 
 #TODO:Use bootstrap
 
