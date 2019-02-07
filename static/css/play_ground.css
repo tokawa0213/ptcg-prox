@@ -1,5 +1,6 @@
 body{
     background-color: cornflowerblue;
+    overflow: hidden;
 }
 .main{
     width: 100%;
@@ -16,6 +17,9 @@ body{
 li{
     list-style: none;
 }
+h5{
+    font-size: 3vmin;
+}
 #back{
     z-index: 0;
     width: 100vw;
@@ -25,7 +29,14 @@ li{
     position: absolute;
     top: 4vh;
     left: 44vw;
-    width: 12vw;
+    width: 6vw;
+    height: 22vh;
+}
+#battle-field_position_sub{
+    position: absolute;
+    top: 4vh;
+    left: 50vw;
+    width: 6vw;
     height: 22vh;
 }
 #deck_position{
@@ -42,7 +53,10 @@ li{
     width: 12vw;
     height: 22vh;
 }
-
+[id^="side-"] img{
+  width: 12vw;
+  height: 22vh;
+}
 #side-1_position{
     position: absolute;
     top: 3vh;
@@ -64,7 +78,7 @@ li{
     width: 2vw;
     height: 21vh;
 }
-#side-4_postion{
+#side-4_position{
     position: absolute;
     top: 1.5vh;
     left: 4vw;
@@ -89,35 +103,70 @@ li{
     position: absolute;
     top: 43vh;
     left: 18vw;
-    width: 12vw;
+    width: 6vw;
+    height: 22vh;
+}
+#bench-1_position_sub{
+    position: absolute;
+    top: 43vh;
+    left: 24vw;
+    width: 6vw;
     height: 22vh;
 }
 #bench-2_position{
     position: absolute;
     top: 43vh;
     left: 31vw;
-    width: 12vw;
+    width: 6vw;
+    height: 22vh;
+}
+#bench-2_position_sub{
+    position: absolute;
+    top: 43vh;
+    left: 37vw;
+    width: 6vw;
     height: 22vh;
 }
 #bench-3_position{
     position: absolute;
     top: 43vh;
     left: 44vw;
-    width: 12vw;
+    width: 6vw;
+    height: 22vh;
+}
+#bench-3_position_sub{
+    position: absolute;
+    top: 43vh;
+    left: 50vw;
+    width: 6vw;
     height: 22vh;
 }
 #bench-4_position{
     position: absolute;
     top: 43vh;
     left: 57vw;
-    width: 12vw;
+    width: 6vw;
+    height: 22vh;
+}
+#bench-4_position_sub{
+    position: absolute;
+    top: 43vh;
+    left: 63vw;
+    width: 6vw;
     height: 22vh;
 }
 #bench-5_position{
     position: absolute;
     top: 43vh;
     left: 70vw;
-    width: 12vw;
+    width: 6vw;
+    height: 22vh;
+}
+#bench-5_position_sub{
+    position: absolute;
+    top: 43vh;
+    left: 76vw;
+    width: 6vw;
     height: 22vh;
 }
 #lost_position{
@@ -126,7 +175,10 @@ li{
   left: 17vw;
   width: 12vw;
   height: 22vh;
-  background-color:aqua
+  border: dashed 3px;
+  border-radius: 10px;
+  font-size: 3vmin;
+  color: red;
 }
 #stadium_position{
   position: absolute;
@@ -134,26 +186,32 @@ li{
   left: 30vw;
   width: 12vw;
   height: 22vh;
-  background-color:red
+  border: dashed 3px;
+  border-radius: 10px;
+  font-size: 3vmin;
+  color: red;
 }
 .operations_postion{
     position: absolute;
     top: 70vh;
-    left: 0;
-    width: 100vw;
-    height: 10vh;
+    left: 60vw;
+    width: 40vw;
+    height: 5vh;
 }
-.card{
+.operations_postion ul li{
+  display: inline-block;
+}
+.card,.back_card{
     height : auto;
     width: 8vw;
     position: absolute;
 }
 #hand{
     position: absolute;
-    top: 80vh;
+    top: 70vh;
     left: 0;
-    width: 100vw;
-    height: 25vw;
+    width: 80vw;
+    height: 20vw;
     overflow-x: scroll;
 }
 #hand ul {
@@ -176,7 +234,11 @@ li{
 }
 #deck_trash_lost ul li{
     float: left;
-    list-style: none;
     width: 8vw;
     margin: 0vh 0vw 12vh 0vw;
+}
+.drop_sub li{
+  overflow:hidden;
+  display: list-item;
+  margin: 0vh 0vw 3vh 0vw;
 }

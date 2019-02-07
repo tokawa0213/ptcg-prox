@@ -8,11 +8,13 @@
         <link rel="stylesheet" type="text/css" href="static/css/play_ground.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script>
         var hand = {{hand|tojson}};
         var deck = {{deck|tojson}};
         var side = {{side|tojson}};
-        var drag_object,drag_object_id,drag_object_parent_id;
         </script>
         <script src="static/js/head.js"></script>
     </head>
@@ -24,34 +26,42 @@
                 <ul hidden id="lost"></ul>
             </div>
             <img src = "static/p_mat.jpg" id = "back">
-            <!-- Divide the drop area in 2. Left side will be for evo and poke
-            the other side will be for energy and equipments, so when dropped in drop area,
-            make the li object a child of the drop class -->
-            <!-- Make new area lost position -->
-            <!-- Make new area stadium postion -->
-            <div class  = "drop" id = "stadium_position"></div>
+            <div class  = "drop" id = "stadium_position">Stadium</div>
             <div class  = "drop" id = "battle-field_position"></div>
             <div class  = "drop" id = "bench-1_position"></div>
             <div class  = "drop" id = "bench-2_position"></div>
             <div class  = "drop" id = "bench-3_position"></div>
             <div class  = "drop" id = "bench-4_position"></div>
             <div class  = "drop" id = "bench-5_position"></div>
-            <div class  = "drop" id = "side-1_position"></div>
-            <div class  = "drop" id = "side-2_position"></div>
-            <div class  = "drop" id = "side-3_position"></div>
-            <div class  = "drop" id = "side-4_postion"></div>
-            <div class  = "drop" id = "side-5_position"></div>
-            <div class  = "drop" id = "side-6_position"></div>
-            <div class  = "drop_disappear" id = "lost_position"></div>
+            <div class  = "drop_sub" id = "battle-field_position_sub"></div>
+            <div class  = "drop_sub" id = "bench-1_position_sub"></div>
+            <div class  = "drop_sub" id = "bench-2_position_sub"></div>
+            <div class  = "drop_sub" id = "bench-3_position_sub"></div>
+            <div class  = "drop_sub" id = "bench-4_position_sub"></div>
+            <div class  = "drop_sub" id = "bench-5_position_sub"></div>
+            <div class  = "drop_side" id = "side-1_position"><img src="static/poke_ura.jpg" class="back_card"></div>
+            <div class  = "drop_side" id = "side-2_position"><img src="static/poke_ura.jpg" class="back_card"></div>
+            <div class  = "drop_side" id = "side-3_position"><img src="static/poke_ura.jpg" class="back_card"></div>
+            <div class  = "drop_side" id = "side-4_position"><img src="static/poke_ura.jpg" class="back_card"></div>
+            <div class  = "drop_side" id = "side-5_position"><img src="static/poke_ura.jpg" class="back_card"></div>
+            <div class  = "drop_side" id = "side-6_position"><img src="static/poke_ura.jpg" class="back_card"></div>
+            <div class  = "drop_disappear" id = "lost_position">Lost</div>
             <div class  = "drop_disappear" id = "deck_position"></div>
             <div class  = "drop_disappear" id = "trash_position"></div>
             <div class="operations_postion">
-                <form action="{{ url_for('play_ground')}}" method="post"><button type="submit"> 最初からやり直す </button></form>
-                <input type="button" value="一枚引く" id="draw">
-                <input type="button" value="シャッフル" id="shuffle">
+                <ul>
+                    <li><form action="{{ url_for('play_ground')}}" method="post"><button type="submit"> 最初からやり直す </button></form></li>
+                    <li><input type="button" value="一枚引く" id="draw"></li>
+                    <li><input type="button" value="シャッフル" id="shuffle"></li>
+                    <li><input type="button" value="コインを投げる" id="coin"></li>
+                    <li>デッキの上から<input type="text" value="5" id="top_card_num">枚見る<input type="button" value="実行" id="exe_top_card_num"></li>
+                </ul>
             </div>
             <div class  = "drop" id ="hand_position"></div>
-            <div id="hand"><h5> Hand </h5><ul></ul></div>
+            <div class = "drop_disappear" id="hand">
+                <h5> Hand </h5>
+                <ul></ul>
+            </div>
         </div>
     </body>
     <script src="static/js/body.js"></script>

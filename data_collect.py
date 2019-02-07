@@ -160,6 +160,7 @@ def search(i):
         d["Ret"] = len(weak_res_ret[2].findAll("span"))
     except:
         ret = "None"
+    #Accept only GX and trainers
     if d["HP"] == 0 or d["Name"].endswith("GX"):
         try:
             img = Image.open(BytesIO(r.content))
@@ -170,6 +171,7 @@ def search(i):
     return d
 
 #TODO: CHECK THE CARD ID ! THIS RANGE IS VERY TEKITO=
+
 if __name__ == "__main__":
     #33553 : start of Best of XY
     #33851 : End of Nest of XY
