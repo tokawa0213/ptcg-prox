@@ -17,6 +17,7 @@ deck = None
 @app.route('/')
 def index():
 
+    #vulnerable to edittable url
     global url
     global deck
 
@@ -43,7 +44,8 @@ def ResultPage():
             image_file = "static/imdir/" + id + ".jpg"
             if not os.path.exists(image_file):
                 d.download_img(id)
-    return render_template('result.html',deck=deck,f_name="imdir",func=f())
+        return "false"
+    return render_template('result.html',deck=deck,f_name="imdir",func=f)
 
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])

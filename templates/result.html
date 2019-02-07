@@ -7,7 +7,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- CHANGE HERE FROM ... -->
     <script>
-        window.onload ={{ func }}
+        window.load = function(){
+            {{ func() }}
+        }
     </script>
     <table>
         {% for info in deck %}
@@ -38,5 +40,6 @@
         <button type="submit"> デッキを試す </button>
     </form>
     <h5>Image cited from <a href="https://www.pokemon-card.com/"> official website</a></h5>
+    <script>alert("Hello")</script>
 
 {% endblock %}
