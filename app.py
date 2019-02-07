@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,make_response,Response,stream_with_context,render_template_string
+from flask import Flask,render_template,request,make_response,Response,stream_with_context,render_template_string,session
 import prox
 from flask_bootstrap import Bootstrap
 from glob import glob
@@ -7,19 +7,15 @@ import random
 
 
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
+app.secret_key = 'hogehoge'
 
 #TODO:Use bootstrap
 
-url = ""
-deck = None
 
 @app.route('/')
 def index():
 
     #vulnerable to edittable url
-    global url
-    global deck
 
     for pdf_file in glob("static/*.pdf"):
         os.remove(pdf_file)
@@ -28,16 +24,12 @@ def index():
 
 @app.route('/result',methods=["GET"])
 def ResultPage():
-
-    global url
-    global deck
-
-    url = request.args.get('name')
-    print(url)
-    d = prox.Deck(url)
+    session["url"] = request.args.get('name')
+    print(session["url"])
+    d = prox.Deck(session["url"])
     d.scrape()
-    deck = d.deck
-    card_id_list = [i[2] for i in deck]
+    session["deck"] = d.deck
+    card_id_list = [i[2] for i in session["deck"]]
     print(card_id_list)
     def f():
         for id in card_id_list:
@@ -45,21 +37,18 @@ def ResultPage():
             if not os.path.exists(image_file):
                 d.download_img(id)
         return "false"
-    return render_template('result.html',deck=deck,f_name="imdir",func=f)
+    return render_template('result.html',deck=session["deck"],f_name="imdir",func=f)
 
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])
 def PDFPage():
 
-    global url
-    global deck
-
-    card_id_list = [i[2] for i in deck]
+    card_id_list = [i[2] for i in session["deck"]]
 
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
-    p = prox.PDF_generater(url)
+    p = prox.PDF_generater(session["url"])
     p.make_pdf(f_info)
-    binary_pdf = open("static/" + url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
+    binary_pdf = open("static/" + session["url"].lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
     response.headers['Content-Disposition'] = \
@@ -68,9 +57,9 @@ def PDFPage():
 
 @app.route('/play_ground',methods=["POST","GET"])
 def play_ground():
-    global deck
+
     new_deck = []
-    for _, _, idx, number in deck:
+    for _, _, idx, number in session[deck]:
         for _ in range(int(number.rstrip("枚"))):
             new_deck.append(idx)
     random.shuffle(new_deck)
