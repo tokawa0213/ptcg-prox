@@ -5,12 +5,9 @@
     <form action="{{ url_for('PDFPage')}}" method="post">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+
     <!-- CHANGE HERE FROM ... -->
-    <script>
-        window.load = function(){
-            {{ func() }}
-        }
-    </script>
     <table>
         {% for info in deck %}
             <tr>
@@ -40,6 +37,12 @@
         <button type="submit"> デッキを試す </button>
     </form>
     <h5>Image cited from <a href="https://www.pokemon-card.com/"> official website</a></h5>
-    <script>alert("Hello")</script>
+    <script>
 
+    $(function() {
+        $('table').lazyload();
+        $('img').lazyload();
+        {{ func() }}
+    });
+    </script>
 {% endblock %}
