@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
+<link rel="stylesheet" type="text/css" href="static/css/index.css">
+<img src="static/saru.png" id="back">
 <h2> デッキコードURLを入力 </h2>
-    <form action="{{ url_for('ResultPage')}}" method="get">
-    <input type ="text" name="name" placeholder="URL"/>
-        <button type="submit">Submit</button>
+    <form class = "form-wrapper" action="{{ url_for('ResultPage')}}" method="get">
+    <input type ="text" name="name" placeholder="デッキコードのURL" id="search">
+        <button type="submit" value="Submit" id="submit">検索</button>
     </form>
 {% endblock %}

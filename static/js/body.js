@@ -84,6 +84,7 @@ $("#exe_top_card_num").click(function(){
     if($("#deck li").length < card_num){
         toastr.info("指定枚数が大き過ぎます")
     }else{
+        toastr.info("デッキの上から"+card_num+"枚表示");
         $("#deck li").each(
             function(index,element){
                 if(index >= card_num) {
