@@ -3,9 +3,12 @@
     <h2>出力するカードを選択して下さい</h2>
     <link rel="stylesheet" type="text/css" href="static/css/result.css">
     <form action="{{ url_for('PDFPage')}}" method="post">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- CHANGE HERE FROM ... -->
-
+    <script>
+        window.onload ={{ func }}
+    </script>
     <table>
         {% for info in deck %}
             <tr>

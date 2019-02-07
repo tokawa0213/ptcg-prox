@@ -5,6 +5,7 @@ from glob import glob
 import os
 import random
 
+
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
@@ -18,9 +19,6 @@ def index():
 
     global url
     global deck
-
-    url = ""
-    deck = None
 
     for pdf_file in glob("static/*.pdf"):
         os.remove(pdf_file)
@@ -39,12 +37,13 @@ def ResultPage():
     d.scrape()
     deck = d.deck
     card_id_list = [i[2] for i in deck]
-
-    for id in card_id_list:
-        image_file = "static/imdir/" + id + ".jpg"
-        if not os.path.exists(image_file):
-            d.download_img(id)
-    return render_template('result.html',deck=deck,f_name="imdir")
+    print(card_id_list)
+    def f():
+        for id in card_id_list:
+            image_file = "static/imdir/" + id + ".jpg"
+            if not os.path.exists(image_file):
+                d.download_img(id)
+    return render_template('result.html',deck=deck,f_name="imdir",func=f())
 
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])

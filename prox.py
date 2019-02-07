@@ -17,8 +17,8 @@ class Deck():
 
     def scrape(self):
         print("Scraping...")
+        driver = webdriver.PhantomJS()
         try:
-            driver = webdriver.PhantomJS()
             driver.get(self.uri)
             r = driver.page_source
             driver.close()
@@ -47,6 +47,7 @@ class Deck():
     def download_img(self,id):
         print("Downloading image...")
         base_page_link = self.image_base_link + id
+        print(base_page_link)
         r = requests.get(base_page_link)
         soup = BeautifulSoup(r.text,"lxml")
         image_link = "https://www.pokemon-card.com" + soup.find(class_="fit").get("src")
