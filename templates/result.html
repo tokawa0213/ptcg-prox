@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
     <h2>出力するカードを選択して下さい</h2>
+    <link rel="stylesheet" type="text/css" href="static/css/result.css">
     <form action="{{ url_for('PDFPage')}}" method="post">
 
     <!-- CHANGE HERE FROM ... -->
@@ -11,7 +12,7 @@
                 <td>
                     <input type="checkbox" name="more_than_zero" checked>
                 </td>
-                <td><img src="static/{{ f_name }}/{{info[2]}}.jpg" width="10%" height="10%"></td>
+                <th><img src="static/{{ f_name }}/{{info[2]}}.jpg"height="10%"></th>
                 <td>{{info[0]}}</td>
                 <td>{{info[3]}}</td>
                 <td>
@@ -31,7 +32,7 @@
     <button type="submit">PDFを出力</button>
     </form>
     <form action="{{ url_for('play_ground')}}" method="post">
-        <button type="submit"> デッキを試してみる </button>
+        <button type="submit"> デッキを試す </button>
     </form>
     <h5>Image cited from <a href="https://www.pokemon-card.com/"> official website</a></h5>
 
