@@ -71,7 +71,9 @@ class PDF_generater():
 
     def make_pdf(self,d):
         print("making pdf...")
-        c = canvas.Canvas("static/" + self.url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf")
+        d_id = self.url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/")
+        d_id = self.url.lstrip("https://www.pokemon-card.com/deck/result.html/deckID/").rstrip("/")
+        c = canvas.Canvas("static/" + d_id +".pdf")
         new_deck_info = []
         for f_info in d:
             c_num = int(f_info[1].rstrip("枚"))

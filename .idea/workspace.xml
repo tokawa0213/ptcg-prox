@@ -68,7 +68,7 @@
           <entry key="md" value="2" />
           <entry key="png" value="11" />
           <entry key="py" value="33" />
-          <entry key="slugignore" value="2" />
+          <entry key="slugignore" value="3" />
           <entry key="sql" value="5" />
           <entry key="txt" value="12" />
         </counts>
@@ -81,7 +81,7 @@
           <entry key="Image" value="218" />
           <entry key="JavaScript" value="19" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="PLAIN_TEXT" value="36" />
           <entry key="Python" value="33" />
           <entry key="Scratch" value="5" />
         </counts>
@@ -95,7 +95,7 @@
           <entry key="html" value="11889" />
           <entry key="js" value="2552" />
           <entry key="md" value="772" />
-          <entry key="py" value="10428" />
+          <entry key="py" value="10430" />
           <entry key="slugignore" value="25" />
           <entry key="sql" value="60" />
           <entry key="txt" value="20" />
@@ -108,7 +108,7 @@
           <entry key="JavaScript" value="2552" />
           <entry key="Markdown" value="772" />
           <entry key="PLAIN_TEXT" value="186" />
-          <entry key="Python" value="10424" />
+          <entry key="Python" value="10426" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
         </counts>
@@ -117,23 +117,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="209">
+              <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding>
                 <element signature="e#0#121#0" expanded="true" />
-                <marker date="1549593473303" expanded="true" signature="708:717" ph="..." />
+                <marker date="1549593979519" expanded="true" signature="708:717" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="-694">
               <caret line="12" column="80" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="80" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -146,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
+            <state relative-caret-position="289">
               <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
             </state>
           </provider>
@@ -455,7 +455,7 @@
     <frame x="185" y="23" width="1192" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19565217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19565217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -469,7 +469,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008696" side_tool="true" weight="0.43829787" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" visible="true" weight="0.3134752" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" visible="true" weight="0.3134752" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
@@ -593,13 +593,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/imdir/36201.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.slugignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/poke_ura.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -730,39 +723,46 @@
     <entry file="file://$PROJECT_DIR$/static/imdir/35505.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="1" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.slugignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="209">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
           <folding>
             <element signature="e#0#121#0" expanded="true" />
-            <marker date="1549593473303" expanded="true" signature="708:717" ph="..." />
+            <marker date="1549593979519" expanded="true" signature="708:717" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="-694">
           <caret line="12" column="80" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="80" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <marker date="1549547040878" expanded="true" signature="1483:1492" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="1" selection-end-line="4" />
         </state>
       </provider>
     </entry>
