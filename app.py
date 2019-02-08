@@ -24,12 +24,10 @@ def index():
 @app.route('/result',methods=["GET"])
 def ResultPage():
     session["url"] = request.args.get('name')
-    print(session["url"])
     d = prox.Deck(session["url"])
     d.scrape()
     session["deck"] = d.deck
     card_id_list = [i[2] for i in session["deck"]]
-    print(card_id_list)
     def f():
         for id in card_id_list:
             image_file = "static/imdir/" + id + ".jpg"
