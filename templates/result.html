@@ -6,13 +6,29 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+    <script>
+        $("form").submit(function () {
+
+    var this_master = $(this);
+
+    this_master.find('input[type="checkbox"]').each( function () {
+        var checkbox_this = $(this);
+        if( checkbox_this.is(":checked") == true ) {
+            checkbox_this.attr('value','on');
+        } else {
+            checkbox_this.prop('checked',true);
+            checkbox_this.attr('value','off');
+        }
+    })
+        })
+    </script>
 
     <!-- CHANGE HERE FROM ... -->
     <table>
         {% for info in deck %}
             <tr>
                 <td>
-                    <input type="checkbox" name="more_than_zero" checked>
+                    <input type="checkbox" name="more_than_zero" checked value="on">
                 </td>
                 <th><img src="static/{{ f_name }}/{{info[2]}}.jpg"height="10%"></th>
                 <td>{{info[0]}}</td>

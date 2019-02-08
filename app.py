@@ -43,6 +43,9 @@ def PDFPage():
 
     card_id_list = [i[2] for i in session["deck"]]
 
+    print(request.form.getlist("more_than_zero"))
+    print(request.form.getlist("card_num"))
+
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
     p = prox.PDF_generater(session["url"])
     p.make_pdf(f_info)
