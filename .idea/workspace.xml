@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/prox.py" beforeDir="false" afterPath="$PROJECT_DIR$/prox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/play_ground.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/play_ground.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,13 +59,13 @@
           <entry key="Procfile" value="2" />
           <entry key="README" value="1" />
           <entry key="buildpacks" value="3" />
-          <entry key="css" value="5" />
+          <entry key="css" value="6" />
           <entry key="csv" value="8" />
           <entry key="gitignore" value="13" />
           <entry key="hoge" value="1" />
           <entry key="html" value="47" />
           <entry key="jpg" value="207" />
-          <entry key="js" value="19" />
+          <entry key="js" value="20" />
           <entry key="log" value="1" />
           <entry key="md" value="2" />
           <entry key="png" value="11" />
@@ -77,11 +77,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
+          <entry key="CSS" value="6" />
           <entry key="CSV" value="8" />
           <entry key="HTML" value="47" />
           <entry key="Image" value="218" />
-          <entry key="JavaScript" value="19" />
+          <entry key="JavaScript" value="20" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="36" />
           <entry key="Python" value="33" />
@@ -91,13 +91,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="buildpacks" value="4" />
-          <entry key="css" value="1213" />
+          <entry key="css" value="1231" />
           <entry key="gitignore" value="116" />
           <entry key="hoge" value="21" />
           <entry key="html" value="12067" />
           <entry key="js" value="2552" />
           <entry key="md" value="772" />
-          <entry key="py" value="10958" />
+          <entry key="py" value="10968" />
           <entry key="slugignore" value="25" />
           <entry key="sql" value="60" />
           <entry key="txt" value="20" />
@@ -105,12 +105,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1213" />
+          <entry key="CSS" value="1231" />
           <entry key="HTML" value="12067" />
           <entry key="JavaScript" value="2552" />
           <entry key="Markdown" value="772" />
           <entry key="PLAIN_TEXT" value="186" />
-          <entry key="Python" value="10954" />
+          <entry key="Python" value="10964" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
         </counts>
@@ -120,27 +120,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
+        <entry file="file://$PROJECT_DIR$/prox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-951">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding>
-                <element signature="e#0#121#0" expanded="true" />
-                <marker date="1549628750423" expanded="true" signature="741:750" ph="..." />
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1549631285188" expanded="true" signature="221:453" ph="..." />
+                <marker date="1549631285188" expanded="true" signature="1745:1754" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prox.py">
+        <entry file="file://$PROJECT_DIR$/static/css/play_ground.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-928">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <marker date="1549631133448" expanded="true" signature="211:443" ph="..." />
-                <marker date="1549631133448" expanded="true" signature="1735:1744" ph="..." />
-              </folding>
+            <state relative-caret-position="349">
+              <caret line="242" column="4" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/body.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -241,7 +247,6 @@
         <option value="$PROJECT_DIR$/static/js/head.js" />
         <option value="$PROJECT_DIR$/templates/play_ground.html" />
         <option value="$PROJECT_DIR$/static/js/body.js" />
-        <option value="$PROJECT_DIR$/static/css/play_ground.css" />
         <option value="$PROJECT_DIR$/static/css/result.css" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
@@ -249,6 +254,7 @@
         <option value="$PROJECT_DIR$/templates/result.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/prox.py" />
+        <option value="$PROJECT_DIR$/static/css/play_ground.css" />
       </list>
     </option>
   </component>
@@ -282,6 +288,18 @@
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ptcg_prox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ptcg_prox" type="b2602c69:ProjectViewProjectNode" />
@@ -455,13 +473,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="185" y="23" width="1192" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19565217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19565217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24113475" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -470,7 +489,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008696" side_tool="true" weight="0.43829787" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" weight="0.3134752" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" visible="true" weight="0.3134752" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
@@ -631,13 +650,6 @@
     <entry file="file://$PROJECT_DIR$/static/saru.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/play_ground.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="219" column="13" lean-forward="true" selection-start-line="219" selection-start-column="13" selection-end-line="219" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -680,13 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2745">
           <caret line="189" column="20" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/body.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -747,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="24">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#121#0" expanded="true" />
@@ -758,12 +763,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-928">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="-951">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
-            <marker date="1549631133448" expanded="true" signature="211:443" ph="..." />
-            <marker date="1549631133448" expanded="true" signature="1735:1744" ph="..." />
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1549631285188" expanded="true" signature="221:453" ph="..." />
+            <marker date="1549631285188" expanded="true" signature="1745:1754" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/body.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/play_ground.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="242" column="4" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
         </state>
       </provider>
     </entry>

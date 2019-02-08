@@ -238,7 +238,7 @@ h5{
     margin: 0vh 0vw 12vh 0vw;
 }
 .drop_sub li{
-  overflow:hidden;
-  display: list-item;
-  margin: 0vh 0vw 3vh 0vw;
+    height: 4vh;
+    overflow:hidden;
+    display: list-item;
 }
