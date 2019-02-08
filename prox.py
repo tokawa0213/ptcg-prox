@@ -74,7 +74,7 @@ class PDF_generater():
         self.c_per_p = int(self.c_per_p_yoko * self.c_per_p_yoko)
         self.mar_tate = 0.8*(self.p_tate-self.c_per_p_tate*self.c_tate)/(self.c_per_p_tate-1)
         self.mar_yoko = 0.8*(self.p_yoko-self.c_per_p_yoko*self.c_yoko)/(self.c_per_p_yoko-1)
-        self.url = change_url(url)
+        self.url = url
 
     def make_pdf(self,d):
         print("making pdf...")
@@ -98,7 +98,6 @@ class PDF_generater():
                 x_pos += self.c_yoko
             c.showPage()
         c.save()
-        print("finished making pdf")
 
 if __name__ == "__main__":
     d = Deck()

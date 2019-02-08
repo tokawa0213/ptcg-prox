@@ -5,10 +5,9 @@ from glob import glob
 import os
 import random
 import re
-import time
 
 app = Flask(__name__)
-app.secret_key = str(random.randint(1,99999))
+app.secret_key = "secret_key"
 
 #TODO:Use bootstrap
 
@@ -41,18 +40,13 @@ def ResultPage():
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])
 def PDFPage():
-    print(session["url"])
-
 
     card_id_list = [i[2] for i in session["deck"]]
 
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
-
-    for i in f_info:
-        print(i)
-
     p = prox.PDF_generater(session["url"])
     p.make_pdf(f_info)
+
     binary_pdf = open("static/" + session["url"].lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
