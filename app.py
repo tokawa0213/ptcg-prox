@@ -58,7 +58,7 @@ def PDFPage():
 def play_ground():
 
     new_deck = []
-    for _, _, idx, number in session[deck]:
+    for _, _, idx, number in session["deck"]:
         for _ in range(int(number.rstrip("枚"))):
             new_deck.append(idx)
     random.shuffle(new_deck)
