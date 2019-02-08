@@ -1,9 +1,10 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from reportlab.lib.units import mm
+from reportlab.lib.utils import ImageReader
+#try lazy
 from reportlab.pdfgen import canvas
 import requests
-from PIL import Image
 import os
 import re
 
@@ -93,8 +94,8 @@ class PDF_generater():
                 if num%self.c_per_p_yoko == 0 and num !=0:
                     x_pos = 0
                     y_pos += self.c_tate
-                image = Image.open(image_path)
-                c.drawInlineImage(image,x_pos,y_pos,width=self.c_yoko,height=self.c_tate)
+                image = ImageReader(image_path)
+                c.drawImage(image,x_pos,y_pos,width=self.c_yoko,height=self.c_tate)
                 x_pos += self.c_yoko
             c.showPage()
         return c.getpdfdata()
