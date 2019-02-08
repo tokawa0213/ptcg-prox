@@ -98,6 +98,7 @@ class PDF_generater():
                 x_pos += self.c_yoko
             c.showPage()
         c.save()
+        print("finished making pdf")
 
 if __name__ == "__main__":
     d = Deck()

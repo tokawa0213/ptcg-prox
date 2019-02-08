@@ -48,7 +48,8 @@ def PDFPage():
 
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
 
-    print(f_info)
+    for i in f_info:
+        print(i)
 
     p = prox.PDF_generater(session["url"])
     p.make_pdf(f_info)
