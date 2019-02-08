@@ -43,14 +43,11 @@ def PDFPage():
 
     card_id_list = [i[2] for i in session["deck"]]
 
-    print(request.form.getlist("more_than_zero"))
-    print(request.form.getlist("card_num"))
-
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
     p = prox.PDF_generater(session["url"])
-    p.make_pdf(f_info)
+    binary_pdf = p.make_pdf(f_info)
 
-    binary_pdf = open("static/" + session["url"].lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
+    #binary_pdf = open("static/" + session["url"].lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
     response.headers['Content-Disposition'] = \
@@ -61,7 +58,6 @@ def PDFPage():
 def play_ground():
 
     new_deck = []
-    print(session["deck"])
     for _, _, idx, number in session["deck"]:
         for _ in range(int(number.rstrip("枚"))):
             new_deck.append(idx)

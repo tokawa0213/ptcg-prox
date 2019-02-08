@@ -97,7 +97,7 @@ class PDF_generater():
                 c.drawInlineImage(image,x_pos,y_pos,width=self.c_yoko,height=self.c_tate)
                 x_pos += self.c_yoko
             c.showPage()
-        c.save()
+        return c.getpdfdata()
 
 if __name__ == "__main__":
     d = Deck()
