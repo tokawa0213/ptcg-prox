@@ -6,7 +6,7 @@ import os
 import random
 
 app = Flask(__name__)
-app.secret_key = 'hoge'
+app.secret_key = str(random.randint(1,99999))
 
 #TODO:Use bootstrap
 
