@@ -7,6 +7,13 @@ from PIL import Image
 import os
 import re
 
+def change_url(url):
+    if len(url) == 20:
+        return "https://www.pokemon-card.com/deck/confirm.html/deckID/" + url + "/"
+    if "result.html" in url:
+        return url.replace("result.html","confirm.html")
+    return url
+
 class Deck():
     def __init__(self,dcode):
         self.dcode = dcode
@@ -67,13 +74,11 @@ class PDF_generater():
         self.c_per_p = int(self.c_per_p_yoko * self.c_per_p_yoko)
         self.mar_tate = 0.8*(self.p_tate-self.c_per_p_tate*self.c_tate)/(self.c_per_p_tate-1)
         self.mar_yoko = 0.8*(self.p_yoko-self.c_per_p_yoko*self.c_yoko)/(self.c_per_p_yoko-1)
-        self.url = url
+        self.url = change_url(url)
 
     def make_pdf(self,d):
         print("making pdf...")
-        d_id = self.url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/")
-        d_id = d_id.lstrip("https://www.pokemon-card.com/deck/result.html/deckID/").rstrip("/")
-        c = canvas.Canvas("static/" + d_id +".pdf")
+        c = canvas.Canvas("static/" + self.url.lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf")
         new_deck_info = []
         for f_info in d:
             c_num = int(f_info[1].rstrip("枚"))

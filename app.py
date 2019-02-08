@@ -4,6 +4,7 @@ from flask_bootstrap import Bootstrap
 from glob import glob
 import os
 import random
+import re
 
 app = Flask(__name__)
 app.secret_key = str(random.randint(1,99999))
@@ -23,7 +24,7 @@ def index():
 
 @app.route('/result',methods=["GET"])
 def ResultPage():
-    session["url"] = request.args.get('name')
+    session["url"] = prox.change_url(request.args.get('name'))
     d = prox.Deck(session["url"])
     d.scrape()
     session["deck"] = d.deck
