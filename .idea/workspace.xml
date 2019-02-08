@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prox.py" beforeDir="false" afterPath="$PROJECT_DIR$/prox.py" afterDir="false" />
-    </list>
+    <list default="true" id="932d7f98-f97d-4086-aef8-1bebe52c6648" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,7 @@
           <entry key="html" value="11889" />
           <entry key="js" value="2552" />
           <entry key="md" value="772" />
-          <entry key="py" value="10688" />
+          <entry key="py" value="10696" />
           <entry key="slugignore" value="25" />
           <entry key="sql" value="60" />
           <entry key="txt" value="20" />
@@ -111,7 +108,7 @@
           <entry key="JavaScript" value="2552" />
           <entry key="Markdown" value="772" />
           <entry key="PLAIN_TEXT" value="186" />
-          <entry key="Python" value="10684" />
+          <entry key="Python" value="10692" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="60" />
         </counts>
@@ -120,28 +117,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="197">
+              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
               <folding>
                 <element signature="e#0#121#0" expanded="true" />
-                <marker date="1549597326005" expanded="true" signature="1016:1025" ph="..." />
+                <marker date="1549597432762" expanded="true" signature="757:766" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-963">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-967">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1549597005783" expanded="true" signature="189:191" ph="..." />
-                <marker date="1549597005783" expanded="true" signature="1483:1492" ph="..." />
+                <marker date="1549597432757" expanded="true" signature="189:421" ph="..." />
+                <marker date="1549597432757" expanded="true" signature="1713:1722" ph="..." />
               </folding>
             </state>
           </provider>
@@ -208,8 +205,8 @@
       <find>submit</find>
       <find>fit</find>
       <find>download</find>
-      <find>deck</find>
       <find>url</find>
+      <find>deck</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -457,13 +454,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="185" y="23" width="1192" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19565217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24113475" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -472,7 +470,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008696" side_tool="true" weight="0.43829787" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" weight="0.3134752" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49913043" visible="true" weight="0.3134752" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
@@ -740,18 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-963">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1549597005783" expanded="true" signature="189:191" ph="..." />
-            <marker date="1549597005783" expanded="true" signature="1483:1492" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -761,11 +747,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="197">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
           <folding>
             <element signature="e#0#121#0" expanded="true" />
-            <marker date="1549597326005" expanded="true" signature="1016:1025" ph="..." />
+            <marker date="1549597432762" expanded="true" signature="757:766" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-967">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1549597432757" expanded="true" signature="189:421" ph="..." />
+            <marker date="1549597432757" expanded="true" signature="1713:1722" ph="..." />
           </folding>
         </state>
       </provider>

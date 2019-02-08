@@ -5,6 +5,7 @@ from glob import glob
 import os
 import random
 import re
+import time
 
 app = Flask(__name__)
 app.secret_key = str(random.randint(1,99999))
@@ -48,6 +49,7 @@ def PDFPage():
     f_info = zip(request.form.getlist("more_than_zero"),request.form.getlist("card_num"),card_id_list)
     p = prox.PDF_generater(session["url"])
     p.make_pdf(f_info)
+    time.sleep(3)
     binary_pdf = open("static/" + session["url"].lstrip("https://www.pokemon-card.com/deck/confirm.html/deckID/").rstrip("/") +".pdf","rb").read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
