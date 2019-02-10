@@ -3,7 +3,7 @@
 
 ### Heroku Link
 
-Contact me for link
+https://ptcg-prox.herokuapp.com/
 
 ### What can you do ?
 
@@ -19,10 +19,11 @@ Make any deck with just 350 yen !!
 
 3. Throw deck code as a query
 
-4. Push convert to pdf
+4.a. Push convert to pdf
+
+4.b. Play with your cards at "play ground"
 
 ### Some screenshots
-1.
 * Deck code query
 ![](readme_resource/query.png)
 
@@ -31,9 +32,3 @@ Make any deck with just 350 yen !!
 
 * PDF output
 ![](readme_resource/pdf_result.png)
-
-### TODO:
-
-1. Use bootstrap to make the UI better
-2. Change the routing system
-3. Refactor the code
