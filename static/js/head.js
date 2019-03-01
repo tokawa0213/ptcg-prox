@@ -22,6 +22,21 @@ $(".card").draggable({
 });
 };
 
+toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-left",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showEasing": "swing",
+    "timeOut": 500,
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+};
+
 window.onload = function(){
 for (var card_num =0; card_num < hand.length;card_num++){
     $("#hand ul").append("<li><img src=static/imdir/"+hand[card_num]+".jpg class=\"card\" id="+card_num.toString()+"></li>")
