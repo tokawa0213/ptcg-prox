@@ -24,18 +24,22 @@ def index():
 
 @app.route('/result',methods=["GET"])
 def ResultPage():
-    session["url"] = prox.change_url(request.args.get('name'))
-    d = prox.Deck(session["url"])
-    d.scrape()
-    session["deck"] = d.deck
-    card_id_list = [i[2] for i in session["deck"]]
-    def f():
-        for id in card_id_list:
-            image_file = "static/imdir/" + id + ".jpg"
-            if not os.path.exists(image_file):
-                d.download_img(id)
-        return "false"
-    return render_template('result.html',deck=session["deck"],f_name="imdir",func=f)
+    if request.args.get('name') != 'failure':
+        session["url"] = prox.change_url(request.args.get('name'))
+
+        d = prox.Deck(session["url"])
+        d.scrape()
+        session["deck"] = d.deck
+        card_id_list = [i[2] for i in session["deck"]]
+        def f():
+            for id in card_id_list:
+                image_file = "static/imdir/" + id + ".jpg"
+                if not os.path.exists(image_file):
+                    d.download_img(id)
+            return "false"
+        return render_template('result.html',deck=session["deck"],f_name="imdir",func=f)
+    else:
+        pass
 
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])

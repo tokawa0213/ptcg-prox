@@ -1,11 +1,29 @@
-{% extends "layout.html" %}
-{% block content %}
-<link rel="stylesheet" type="text/css" href="static/css/index.css">
-<img src="static/saru.png" id="back">
-<h2> デッキコードURLを入力 </h2>
-<h5>Contact me from <a href="https://twitter.com/koromooo_">twitter</a> or on <a href="https://github.com/tokawa0213">github</a> for more information</h5>
-    <form class = "form-wrapper" action="{{ url_for('ResultPage')}}" method="get">
-    <input type ="text" name="name" placeholder="デッキコードのURL" id="search">
-        <button type="submit" value="Submit" id="submit">検索</button>
-    </form>
-{% endblock %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>デッキ検索</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+<form class = "form-wrapper" action="{{ url_for('ResultPage')}}" method="get">
+    <img class="mb-4" src="static/saru.png" alt="" width="50%" height="50%">
+    <h1 class="h3 mb-3 font-weight-normal">デッキコードを入力して下さい</h1>
+    <label for="inputEmail" class="sr-only">Deck code</label>
+    <input type ="text" name="name" placeholder="デッキコードのURL" id="search" required autofocus>
+    <p></p>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" value="Submit" id="submit">検索</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+</form>
+</body>
+</html>

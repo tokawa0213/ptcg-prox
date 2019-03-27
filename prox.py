@@ -13,6 +13,8 @@ def change_url(url):
         return "https://www.pokemon-card.com/deck/confirm.html/deckID/" + url + "/"
     if "result.html" in url:
         return url.replace("result.html","confirm.html")
+    if 'https://www.pokemon-card.com' not in url:
+        return 'failure'
     return url
 
 class Deck():
