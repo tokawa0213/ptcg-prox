@@ -10,6 +10,7 @@ dominate==2.3.5
 dropbox==9.3.0
 Flask==1.0.2
 Flask-Bootstrap==3.3.7.1
+Flask-HTTPAuth==3.2.4
 gunicorn==19.9.0
 idna==2.8
 itsdangerous==1.1.0
@@ -22,6 +23,7 @@ pandas==0.23.4
 Pillow==5.3.0
 PyMySQL==0.9.3
 python-dateutil==2.7.5
+python-dotenv==0.10.1
 pytz==2018.7
 reportlab==3.5.12
 requests==2.21.0
