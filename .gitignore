@@ -1,7 +1,4 @@
 .python-version
-/static/*.pdf
-/static/imdir/*.jpg
-/static/*.jpg
 ghostdriver.log
 /venv
 .env
