@@ -229,7 +229,7 @@ h5{
     position: absolute;
     top: 0;
     left: 56vw;
-    width: 27vw;
+    width: 30vw;
     height: 43vh;
 }
 #deck_trash_lost ul li{
@@ -245,7 +245,7 @@ h5{
 
 .btn-gradient-3d-simple {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0em 0.5em;
   text-decoration: none;
   border-radius: 4px;
   color: #ffffff;
