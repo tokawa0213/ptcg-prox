@@ -51,17 +51,14 @@
             <div class  = "drop_disappear" id = "trash_position"></div>
             <div class="operations_postion">
                 <ul>
-                    <li><input type="button" value="シャッフル" id="shuffle"></li>
-                    <li><input type="button" value="コインを投げる" id="coin"></li>
-                    <li>デッキの上から<input type="text" value="5" id="top_card_num">枚見る<input type="button" value="実行" id="exe_top_card_num"></li>
-                    <li><form action="{{ url_for('play_ground')}}" method="post"><button type="submit"> 最初からやり直す </button></form></li>
-                    <li><input type="button" value="一枚引く" id="draw"></li>
-
+                    <a class="btn-gradient-3d-simple" id="shuffle">シャッフル</a>
+                    <a class="btn-gradient-3d-simple" id="coin">コインを投げる</a>
+                    <a class="btn-gradient-3d-simple" id="draw">一枚引く</a>
+                    <li>デッキの上から<input type="text" value="5" id="top_card_num">枚見る<a class="btn-gradient-3d-simple" id="exe_top_card_num">実行</a></li>
                 </ul>
             </div>
             <div class  = "drop" id ="hand_position"></div>
             <div class = "drop_disappear" id="hand">
-                <h5> Hand </h5>
                 <ul></ul>
             </div>
         </div>

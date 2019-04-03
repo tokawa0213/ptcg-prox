@@ -229,16 +229,34 @@ h5{
     position: absolute;
     top: 0;
     left: 56vw;
-    width: 30vw;
+    width: 27vw;
     height: 43vh;
 }
 #deck_trash_lost ul li{
     float: left;
     width: 8vw;
-    margin: 0vh 0vw 12vh 0vw;
+    margin: 0% 0% 35% 0%;
 }
 .drop_sub li{
     height: 4vh;
     overflow:hidden;
     display: list-item;
+}
+
+.btn-gradient-3d-simple {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.btn-gradient-3d-simple:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
 }
