@@ -71,7 +71,7 @@ class PDF_generater():
         self.p_tate = 297 * mm
         self.p_yoko = 210 * mm
         self.c_tate = 88 * mm
-        self.c_yoko = 63 * mm
+        self.c_yoko = 63.5 * mm
         self.c_per_p_tate = self.p_tate//self.c_tate
         self.c_per_p_yoko = self.p_yoko//self.c_yoko
         self.c_per_p = int(self.c_per_p_yoko * self.c_per_p_yoko)

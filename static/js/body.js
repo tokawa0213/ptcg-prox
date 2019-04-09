@@ -10,6 +10,20 @@ $("#draw").click(function () {
         toastr.info("カードを引きました")
     }
 });
+$("#return").click(function () {
+    if($("#hand li").length === 0){
+        toastr.info("手札にカードがありません")
+    }else{
+        //change top deck list
+        var left_card = $("#hand li").eq(0);
+        left_card.remove();
+        $("#deck").prepend(left_card);
+        update_card_draggable();
+        toastr.info("カードを戻しました")
+    }
+});
+
+
 $("#shuffle").click(function (){
     var arr = [];
     $("#deck li").each(function() {
@@ -93,5 +107,6 @@ $("#exe_top_card_num").click(function(){
             }
             );
         $("#deck").slideToggle();
+        update_card_draggable();
     }
 });
