@@ -5,11 +5,14 @@ $("#draw").click(function () {
         //change top deck list
         var top_card = $("#deck li").eq(0);
         top_card.remove();
-        $("#hand ul").append(top_card);
+        top_card.show();
+        top_card.removeAttr('style');
+        $("#hand ul").prepend(top_card);
         update_card_draggable();
         toastr.info("カードを引きました")
     }
 });
+
 $("#return").click(function () {
     if($("#hand li").length === 0){
         toastr.info("手札にカードがありません")
@@ -22,7 +25,6 @@ $("#return").click(function () {
         toastr.info("カードを戻しました")
     }
 });
-
 
 $("#shuffle").click(function (){
     var arr = [];
@@ -38,16 +40,18 @@ $("#shuffle").click(function (){
     }
     toastr.info("デッキがシャッフルされました")
 });
+
 $("#coin").click(function (){
-    coinr_result = Math.random()
+    coinr_result = Math.random();
     if(coinr_result > 0.5){
         toastr.info("コイン結果：表")
     }else{
         toastr.info("コイン結果：裏")
     }
 });
+
 $("#deck_position").click(function (){
-    $("#deck li").each(function(index,element){$(element).show()});
+    $("#deck li").each(function(index,element){$(element).removeAttr('style')});
     if($("#deck").css("display") === "none"){
         toastr.info("デッキをサーチします");
     }else{
@@ -57,6 +61,7 @@ $("#deck_position").click(function (){
     $("#trash").slideUp();
     $("#lost").slideUp();
 });
+
 $("#trash_position").click(function (){
     if($("#trash").css("display") === "none"){
         toastr.info("トラッシュを参照します");
@@ -67,6 +72,7 @@ $("#trash_position").click(function (){
     $("#deck").slideUp();
     $("#lost").slideUp();
 });
+
 $("#lost_position").click(function (){
     if($("#lost").css("display") === "none"){
         toastr.info("ロストゾーンを参照します");
@@ -77,6 +83,7 @@ $("#lost_position").click(function (){
     $("#trash").slideUp();
     $("#deck").slideUp();
 });
+
 $("[id^='side-']").click(function (){
     var side_position = $(this);
     var side_card = side_position.children().filter(
@@ -93,6 +100,7 @@ $("[id^='side-']").click(function (){
         update_card_draggable();
     }
 });
+
 $("#exe_top_card_num").click(function(){
     var card_num = Number($("#top_card_num").prop("value"));
     if($("#deck li").length < card_num){
@@ -106,6 +114,7 @@ $("#exe_top_card_num").click(function(){
                 }
             }
             );
+        //TODO:check hand->side also
         $("#deck").slideToggle();
         update_card_draggable();
     }

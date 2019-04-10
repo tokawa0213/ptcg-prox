@@ -194,8 +194,8 @@ h5{
 .operations_postion{
     position: absolute;
     top: 70vh;
-    left: 70vw;
-    width: 30vw;
+    left: 65vw;
+    width: 35vw;
     height: 5vh;
 }
 .operations_postion ul li{
@@ -210,7 +210,7 @@ h5{
     position: absolute;
     top: 70vh;
     left: 0;
-    width: 70vw;
+    width: 65vw;
     height: 20vw;
     overflow-x: scroll;
 }

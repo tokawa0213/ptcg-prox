@@ -31,7 +31,7 @@ toastr.options = {
   "preventDuplicates": false,
   "onclick": null,
   "showEasing": "swing",
-    "timeOut": 500,
+    "timeOut": 1000,
   "hideEasing": "linear",
   "showMethod": "fadeIn",
   "hideMethod": "fadeOut"
@@ -61,6 +61,30 @@ $(".drop").droppable({
             $("#"+drag_object_parent_id.split(" ")[0] + " li img[id=" + drag_object_id+"]").remove();
             $("#"+drag_object_parent_id.split(" ")[0] + " li:empty").remove();
             $(this).append("<li>" + appending_line + "</li>");
+            update_card_draggable();
+        }
+        $(this).css('z-index', '10');
+        $(this).css('background-color', 'rgb(250,219,218,0)')
+    },
+    over: function(){
+        $(this).css('background-color', 'rgb(250,219,218,0.7)')
+    },
+    out: function(){
+        $(this).css('background-color', 'rgb(250,219,218,0)')
+    }
+});
+
+$(".drop_side").droppable({
+    drop: function(){
+        drag_object_id = drag_object.attr("id");
+        drag_object_parent_id = drag_object.parents("div").attr("id");
+        if ($(this).attr("id") !== drag_object_parent_id){
+            var appending_line = drag_object.parent().html();
+            $("#"+drag_object_parent_id.split(" ")[0] + " li img[id=" + drag_object_id+"]").remove();
+            $("#"+drag_object_parent_id.split(" ")[0] + " li:empty").remove();
+            $(this).append(appending_line);
+            $(this).children(".card").hide();
+            $(this).children(".back_card").show();
             update_card_draggable();
         }
         $(this).css('z-index', '10');
@@ -125,3 +149,15 @@ $(".drop_disappear").droppable({
     }
 });
 };
+
+$(document).ready(function(){
+    var orientation = window.orientation;
+    var noMoreAlert = false;
+    if (orientation === 0) {
+        if(noMoreAlert===false){
+            if(confirm("本アプリは、横向きでの利用を推奨しています。\nこれ以上このメッセージを表示しない場合は「OK」を選択して下さい。")){
+                noMoreAlert = true;
+            }
+        }
+    }
+});
