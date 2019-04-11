@@ -27,7 +27,7 @@ class Deck():
 
     def scrape(self):
         print("Scraping...")
-        driver = webdriver.PhantomJS()
+        driver = webdriver.PhantomJS(service_log_path=os.path.devnull)
         try:
             driver.get(self.uri)
             r = driver.page_source

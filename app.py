@@ -15,20 +15,22 @@ load_dotenv(dotenv_path)
 
 app = Flask(__name__)
 auth = HTTPBasicAuth()
-app.secret_key=os.environ.get("SECRET_KEY")
+
+#app.secret_key=os.environ.get("SECRET_KEY")
 
 users = {
     os.environ.get("ROOT_USER"): os.environ.get("PASSWORD"),
 }
-
+'''
 @auth.get_password
 def get_pw(username):
     if username in users:
         return users.get(username)
     return None
+'''
 
 @app.route('/')
-@auth.login_required
+#@auth.login_required
 def index():
 
     #vulnerable to edittable url
@@ -39,11 +41,10 @@ def index():
     return render_template('index.html')
 
 @app.route('/result',methods=["GET"])
-@auth.login_required
+#@auth.login_required
 def ResultPage():
     if request.args.get('name') != 'failure':
         session["url"] = prox.change_url(request.args.get('name'))
-
         d = prox.Deck(session["url"])
         d.scrape()
         session["deck"] = d.deck
@@ -60,7 +61,7 @@ def ResultPage():
 
 #TODO:Fix the routing => /result_pdf/id
 @app.route('/result_pdf',methods=["POST","GET"])
-@auth.login_required
+#@auth.login_required
 def PDFPage():
 
     card_id_list = [i[2] for i in session["deck"]]
@@ -77,7 +78,7 @@ def PDFPage():
     return response
 
 @app.route('/play_ground',methods=["POST","GET"])
-@auth.login_required
+#@auth.login_required
 def play_ground():
 
     new_deck = []
